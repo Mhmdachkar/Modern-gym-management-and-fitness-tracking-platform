@@ -1,0 +1,314 @@
+{
+  "users": {
+    "row_count": 339,
+    "example_rows": [
+      [
+        "65",
+        "Admin",
+        "admin@threesixty.fit",
+        "NULL",
+        "ctRbIUhnwAUxV8D7F2QI5npbOTFxIoqVgoASBDW7PHLgCPvjfujE9ta1eAHE",
+        "NULL",
+        "NULL",
+        "NULL",
+        "NULL",
+        "NULL",
+        "NULL",
+        "NULL",
+        "NULL"
+      ],
+      [
+        "69",
+        "Anta",
+        "anta@threesixty.fit",
+        "NULL",
+        "NULL",
+        "2024-11-08 17:10:16",
+        "2024-11-08 17:13:00",
+        "NULL",
+        "NULL",
+        "photos/2xrdD0YDuYtkS6cvV4preXv949L6WknwIXR7MNTs.png",
+        "0",
+        "0",
+        "NULL"
+      ],
+      [
+        "70",
+        "Benta",
+        "benta@threesixty.fit",
+        "NULL",
+        "Al9KX3XXfaHdUqlCsktt04muhIfYBoutxr1pKZs3VHvoWKFMjwKObvmMzbDk",
+        "2024-11-08 17:12:02",
+        "2025-06-23 12:13:41",
+        "81720138",
+        "NULL",
+        "photos/ihcYHuUtIwyeTVIy2oqnf0KfBWy2AwcKLTSciylX.png",
+        "0",
+        "0",
+        "NULL"
+      ]
+    ]
+  },
+  "group_user": {
+    "row_count": 3,
+    "example_rows": [
+      [
+        "2",
+        "44",
+        "4",
+        "NULL",
+        "NULL"
+      ],
+      [
+        "3",
+        "52",
+        "1",
+        "NULL",
+        "NULL"
+      ],
+      [
+        "4",
+        "64",
+        "6",
+        "NULL",
+        "NULL"
+      ]
+    ]
+  },
+  "instructors": {
+    "row_count": 7,
+    "example_rows": [
+      [
+        "5",
+        "Coach Frank",
+        "Bonjour, je m\u2019appelle DIAO DEHEGNAN FRANCK, coach sportif passionn\u00e9 depuis plusieurs ann\u00e9es. Je suis sp\u00e9cialis\u00e9 en Musculation, aidant mes clients \u00e0 d\u00e9velopper force et endurance gr\u00e2ce \u00e0 des programmes personnalis\u00e9s et s\u00e9curis\u00e9s.\\r\\n Je propose \u00e9galement des s\u00e9ances de Boxing et Kick-Boxing, combinant cardio et techniques de combat pour am\u00e9liorer comp\u00e9tences, agilit\u00e9 et force mentale. \\r\\nPour les adeptes de Crossfit, je cr\u00e9e des circuits vari\u00e9s et intenses, adapt\u00e9s \u00e0 tous les niveaux, visant endurance, force et agilit\u00e9. \\r\\nEnfin, j\u2019accompagne mes clients en r\u00e9\u00e9ducation physique, assurant une remise en forme progressive apr\u00e8s blessure ou op\u00e9ration, en collaboration avec d\u2019autres professionnels de sant\u00e9.",
+        "photos/rp8F326ng8brjP7HhBoJ5VOXSvsVBG00oflc7qWN.png",
+        "2024-11-01 16:41:11",
+        "2024-11-05 21:56:58",
+        "25000",
+        "NULL",
+        "2024-11-05 21:56:58"
+      ],
+      [
+        "6",
+        "Coach Oscar",
+        "Bonjour, je m\u2019appelle Oscar, coach sportif passionn\u00e9 depuis plusieurs ann\u00e9es. Je suis sp\u00e9cialis\u00e9 en Musculation, aidant mes clients \u00e0 d\u00e9velopper force et endurance gr\u00e2ce \u00e0 des programmes personnalis\u00e9s et s\u00e9curis\u00e9s.\\r\\n Je propose \u00e9galement des s\u00e9ances de Boxing , combinant cardio et techniques de combat pour am\u00e9liorer comp\u00e9tences, agilit\u00e9 et force mentale. \\r\\nPour les adeptes de Crossfit, je cr\u00e9e des circuits vari\u00e9s et intenses, adapt\u00e9s \u00e0 tous les niveaux, visant endurance, force et agilit\u00e9. \\r\\nEnfin, j\u2019accompagne mes clients en r\u00e9\u00e9ducation physique, assurant une remise en forme progressive apr\u00e8s blessure ou op\u00e9ration, en collaboration avec d\u2019autres professionnels de sant\u00e9.Certifi\u00e9 par I\\'injs.','photos/n5YJAX1UomEJVko7UcRhSpJ0SJseWKhztp6LC5oU.jpg','2024-11-01 16:41:45','2024-12-20 15:11:56',NULL,NULL,'2024-12-20 15:11:56"
+      ],
+      [
+        "7",
+        "Coach Hadi",
+        "Coach Hadi est certifi\u00e9 en entra\u00eenement personnel, sp\u00e9cialiste en nutrition sportive, et passionn\u00e9 par l\u2019animation de cours collectifs. Expert en CrossFit, spinning, HIIT cardio et entra\u00eenement au poids de corps, je m\u2019engage \u00e0 guider chaque client vers l\u2019atteinte de leurs objectifs de sant\u00e9 et de performance. Gr\u00e2ce \u00e0 mon approche personnalis\u00e9e et \u00e0 mes connaissances approfondies, je propose des s\u00e9ances dynamiques et vari\u00e9es pour maximiser les r\u00e9sultats et assurer un progr\u00e8s constant. Mon objectif est de motiver, d\u2019encadrer et d\u2019inspirer chaque personne \u00e0 atteindre son plein potentiel.",
+        "photos/HBBeCtGdK2CBzWru11KRblk4J6gyYlEcTqIczYVb.jpg",
+        "2024-11-10 13:13:11",
+        "2024-12-20 15:11:47",
+        "NULL",
+        "NULL",
+        "2024-12-20 15:11:47"
+      ]
+    ]
+  },
+  "subscriptions": {
+    "row_count": 525,
+    "example_rows": [
+      [
+        "48",
+        "72",
+        "2024-11-08 18:05:36",
+        "2025-11-07 18:05:36",
+        "3",
+        "2024-11-08 18:05:36",
+        "2024-11-08 21:03:16",
+        "1000000",
+        "paid",
+        "NULL",
+        "0",
+        "0",
+        "NULL",
+        "0",
+        "NULL"
+      ],
+      [
+        "59",
+        "77",
+        "2024-11-03 13:05:38",
+        "2024-11-03 13:05:38",
+        "6",
+        "2024-11-13 13:05:49",
+        "2024-11-13 13:06:53",
+        "10000",
+        "paid",
+        "NULL",
+        "0",
+        "0",
+        "NULL",
+        "0",
+        "NULL"
+      ],
+      [
+        "60",
+        "79",
+        "2024-11-04 13:09:43",
+        "2024-12-04 13:09:43",
+        "1",
+        "2024-11-13 13:10:12",
+        "2024-11-13 13:10:12",
+        "100000",
+        "paid",
+        "NULL",
+        "0",
+        "0",
+        "NULL",
+        "0",
+        "NULL"
+      ]
+    ]
+  },
+  "scheduled_sessions": {
+    "row_count": 33,
+    "example_rows": [
+      [
+        "111",
+        "405",
+        "19",
+        "10 Sessions",
+        "200000",
+        "10",
+        "instructor",
+        "9",
+        "NULL",
+        "0",
+        "cash",
+        "2025-07-01",
+        "12:00:00",
+        "13:00:00",
+        "1",
+        "scheduled",
+        "288",
+        "2025-06-30 13:07:03",
+        "2025-06-30 13:07:03"
+      ],
+      [
+        "112",
+        "405",
+        "19",
+        "10 Sessions",
+        "200000",
+        "10",
+        "instructor",
+        "9",
+        "NULL",
+        "0",
+        "cash",
+        "2025-07-15",
+        "12:00:00",
+        "13:00:00",
+        "2",
+        "scheduled",
+        "288",
+        "2025-06-30 13:07:03",
+        "2025-06-30 13:07:03"
+      ],
+      [
+        "113",
+        "405",
+        "19",
+        "10 Sessions",
+        "200000",
+        "10",
+        "instructor",
+        "9",
+        "NULL",
+        "0",
+        "cash",
+        "2025-07-29",
+        "12:00:00",
+        "13:00:00",
+        "3",
+        "scheduled",
+        "288",
+        "2025-06-30 13:07:03",
+        "2025-06-30 13:07:03"
+      ]
+    ]
+  },
+  "packages": {
+    "row_count": 25,
+    "example_rows": [
+      [
+        "1",
+        "1 Session",
+        "25000",
+        "1",
+        "1 session 25000",
+        "instructor",
+        "2024-11-01 21:31:52",
+        "2024-11-10 16:14:13",
+        "1",
+        "0",
+        "0",
+        "NULL",
+        "NULL"
+      ],
+      [
+        "2",
+        "10 Sessions",
+        "200000",
+        "42",
+        "12 sessions 200000(offer"
+      ],
+      [
+        "3",
+        "20 Sessions",
+        "380000",
+        "90",
+        "20 Sessions 380000",
+        "instructor",
+        "2024-11-01 21:32:56",
+        "2024-11-10 16:15:46",
+        "20",
+        "0",
+        "0",
+        "NULL",
+        "NULL"
+      ]
+    ]
+  },
+  "plans": {
+    "row_count": 8,
+    "example_rows": [
+      [
+        "1",
+        "1 Mois",
+        "100000",
+        "0",
+        "1",
+        "2024-05-12 10:45:25",
+        "2024-11-08 20:56:09",
+        "30",
+        "0"
+      ],
+      [
+        "3",
+        "1 Ann\u00e9e",
+        "1000000",
+        "40",
+        "1",
+        "2024-05-12 10:45:55",
+        "2024-11-10 16:23:16",
+        "365",
+        "3"
+      ],
+      [
+        "4",
+        "3 Mois",
+        "280000",
+        "10",
+        "1",
+        "2024-11-01 13:38:49",
+        "2024-11-10 16:22:25",
+        "90",
+        "1"
+      ]
+    ]
+  }
+}

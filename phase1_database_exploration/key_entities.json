@@ -1,0 +1,22 @@
+{
+  "members": [
+    "group_user",
+    "users"
+  ],
+  "coaches": [
+    "instructors"
+  ],
+  "subscriptions": [
+    "subscriptions"
+  ],
+  "sessions": [
+    "scheduled_sessions"
+  ],
+  "plans": [
+    "packages",
+    "plans"
+  ],
+  "payments": [],
+  "equipment": [],
+  "classes": []
+}

@@ -1,0 +1,1478 @@
+{
+  "analysis_date": "2025-08-06T13:42:37.015135",
+  "database_name": "Gym Management System",
+  "total_tables": 32,
+  "tables": {
+    "action_events": {
+      "name": "action_events",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "batch_id",
+          "definition": "char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "actionable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "actionable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "target_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "target_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "model_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "model_id",
+          "definition": "bigint unsigned DEFAULT NULL"
+        },
+        {
+          "name": "fields",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "status",
+          "definition": "varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'running'"
+        },
+        {
+          "name": "exception",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "original",
+          "definition": "mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "changes",
+          "definition": "mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "availabilities": {
+      "name": "availabilities",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "available_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "available_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "day_of_week",
+          "definition": "enum('monday'"
+        },
+        {
+          "name": "start_time",
+          "definition": "time NOT NULL"
+        },
+        {
+          "name": "end_time",
+          "definition": "time NOT NULL"
+        },
+        {
+          "name": "is_available",
+          "definition": "tinyint(1) NOT NULL DEFAULT '1'"
+        },
+        {
+          "name": "notes",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "cafes": {
+      "name": "cafes",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "path",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "checkins": {
+      "name": "checkins",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "devices": {
+      "name": "devices",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "device_id",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "serial_id",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "brand",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "failed_jobs": {
+      "name": "failed_jobs",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "uuid",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "connection",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "queue",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "payload",
+          "definition": "longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "exception",
+          "definition": "longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "failed_at",
+          "definition": "timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "freeze_logs": {
+      "name": "freeze_logs",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "subscription_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "requested_days",
+          "definition": "int NOT NULL"
+        },
+        {
+          "name": "actual_days_used",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "frozen_at",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "unfrozen_at",
+          "definition": "datetime DEFAULT NULL"
+        },
+        {
+          "name": "is_active",
+          "definition": "tinyint(1) NOT NULL DEFAULT '1'"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "subscription_id",
+          "references_table": "subscriptions",
+          "references_column": "id"
+        }
+      ]
+    },
+    "group_user": {
+      "name": "group_user",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "group_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "groups": {
+      "name": "groups",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "description",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "path",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "menu",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "images": {
+      "name": "images",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "path",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "studio_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "studio_id",
+          "references_table": "studios",
+          "references_column": "id"
+        }
+      ]
+    },
+    "instructors": {
+      "name": "instructors",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "bio",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "photo",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "capacity",
+          "definition": "int DEFAULT NULL"
+        },
+        {
+          "name": "deleted_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "invoices": {
+      "name": "invoices",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "email",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "phone",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "date",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "invoice_number",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "due_date",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "sub_total",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "discount",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "total",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "items",
+          "definition": "json NOT NULL"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "invoiceable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "invoiceable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "deleted_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "migrations": {
+      "name": "migrations",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "int unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "migration",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "batch",
+          "definition": "int NOT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "notifications": {
+      "name": "notifications",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "title",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "message",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "seen",
+          "definition": "tinyint(1) DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "nova_field_attachments": {
+      "name": "nova_field_attachments",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "int unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "attachable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "attachable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "attachment",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "disk",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "url",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "nova_notifications": {
+      "name": "nova_notifications",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "notifiable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "notifiable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "data",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "read_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "deleted_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "nova_pending_field_attachments": {
+      "name": "nova_pending_field_attachments",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "int unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "draft_id",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "attachment",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "disk",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "o_t_p_s": {
+      "name": "o_t_p_s",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "email",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "otp",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "packages": {
+      "name": "packages",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "validity_days",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "description",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "model",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "days",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "with_partner",
+          "definition": "tinyint(1) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "is_member",
+          "definition": "tinyint(1) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "model_id",
+          "definition": "bigint unsigned DEFAULT NULL"
+        },
+        {
+          "name": "capacity",
+          "definition": "int DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "password_resets": {
+      "name": "password_resets",
+      "columns": [
+        {
+          "name": "email",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "token",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": []
+    },
+    "personal_access_tokens": {
+      "name": "personal_access_tokens",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "tokenable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "tokenable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "token",
+          "definition": "varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "abilities",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "last_used_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "expires_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "plans": {
+      "name": "plans",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "freezing_days",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "active",
+          "definition": "tinyint(1) NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "days",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "shots",
+          "definition": "int NOT NULL DEFAULT '0'"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "post_photos": {
+      "name": "post_photos",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "post_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "path",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "is_cover",
+          "definition": "tinyint(1) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "post_id",
+          "references_table": "posts",
+          "references_column": "id"
+        }
+      ]
+    },
+    "posts": {
+      "name": "posts",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "title",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "body",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "status",
+          "definition": "enum('draft'"
+        },
+        {
+          "name": "published_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "reservations": {
+      "name": "reservations",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "start_datetime",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "end_datetime",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "payment_method",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "reservable_type",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "reservable_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "status",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending'"
+        },
+        {
+          "name": "instructor_id",
+          "definition": "bigint unsigned DEFAULT NULL"
+        },
+        {
+          "name": "instructor_name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "studio_id",
+          "definition": "bigint unsigned DEFAULT NULL"
+        },
+        {
+          "name": "studio_name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "notes",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "balance",
+          "definition": "int NOT NULL DEFAULT '0'"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "instructor_id",
+          "references_table": "instructors",
+          "references_column": "id"
+        },
+        {
+          "column": "studio_id",
+          "references_table": "studios",
+          "references_column": "id"
+        },
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "scheduled_sessions": {
+      "name": "scheduled_sessions",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "package_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "package_name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "package_price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "package_days",
+          "definition": "int NOT NULL"
+        },
+        {
+          "name": "model",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "model_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "model_name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "with_partner",
+          "definition": "tinyint(1) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "payment_method",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "date",
+          "definition": "date NOT NULL"
+        },
+        {
+          "name": "start_time",
+          "definition": "time NOT NULL"
+        },
+        {
+          "name": "end_time",
+          "definition": "time NOT NULL"
+        },
+        {
+          "name": "session_number",
+          "definition": "int NOT NULL"
+        },
+        {
+          "name": "status",
+          "definition": "enum('scheduled'"
+        },
+        {
+          "name": "reservation_id",
+          "definition": "bigint unsigned DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "package_id",
+          "references_table": "packages",
+          "references_column": "id"
+        },
+        {
+          "column": "reservation_id",
+          "references_table": "reservations",
+          "references_column": "id"
+        },
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "studios": {
+      "name": "studios",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "description",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "capacity",
+          "definition": "int DEFAULT NULL"
+        },
+        {
+          "name": "photo",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    },
+    "subscriptions": {
+      "name": "subscriptions",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "user_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "start_date",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "end_date",
+          "definition": "datetime NOT NULL"
+        },
+        {
+          "name": "plan_id",
+          "definition": "bigint unsigned NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "price",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "status",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending'"
+        },
+        {
+          "name": "notes",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        },
+        {
+          "name": "freeze_days_used",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "freeze_attempts",
+          "definition": "int NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "frozen_until",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "has_discount",
+          "definition": "tinyint(1) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "discount_amount",
+          "definition": "decimal(8"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "plan_id",
+          "references_table": "plans",
+          "references_column": "id"
+        },
+        {
+          "column": "user_id",
+          "references_table": "users",
+          "references_column": "id"
+        }
+      ]
+    },
+    "telescope_entries": {
+      "name": "telescope_entries",
+      "columns": [
+        {
+          "name": "sequence",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "uuid",
+          "definition": "char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "batch_id",
+          "definition": "char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "family_hash",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "should_display_on_index",
+          "definition": "tinyint(1) NOT NULL DEFAULT '1'"
+        },
+        {
+          "name": "type",
+          "definition": "varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "content",
+          "definition": "longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "datetime DEFAULT NULL"
+        }
+      ],
+      "primary_keys": [
+        "sequence"
+      ],
+      "foreign_keys": []
+    },
+    "telescope_entries_tags": {
+      "name": "telescope_entries_tags",
+      "columns": [
+        {
+          "name": "entry_uuid",
+          "definition": "char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "tag",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [
+        {
+          "column": "entry_uuid",
+          "references_table": "telescope_entries",
+          "references_column": "uuid"
+        }
+      ]
+    },
+    "telescope_monitoring": {
+      "name": "telescope_monitoring",
+      "columns": [
+        {
+          "name": "tag",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        }
+      ],
+      "primary_keys": [
+        "tag"
+      ],
+      "foreign_keys": []
+    },
+    "users": {
+      "name": "users",
+      "columns": [
+        {
+          "name": "id",
+          "definition": "bigint unsigned NOT NULL AUTO_INCREMENT"
+        },
+        {
+          "name": "name",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "email",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL"
+        },
+        {
+          "name": "email_verified_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "remember_token",
+          "definition": "varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "created_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "updated_at",
+          "definition": "timestamp NULL DEFAULT NULL"
+        },
+        {
+          "name": "phone",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "dob",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "photo",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "weight",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "height",
+          "definition": "varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL"
+        },
+        {
+          "name": "notes",
+          "definition": "text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+        }
+      ],
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": []
+    }
+  },
+  "summary": {
+    "total_columns": 271,
+    "total_primary_keys": 30,
+    "total_foreign_keys": 17,
+    "average_columns_per_table": 8.47
+  }
+}
