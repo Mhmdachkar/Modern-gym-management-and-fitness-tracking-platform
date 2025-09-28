@@ -1,0 +1,101 @@
+query_id,member_id,query_text,intent_category,confidence_score,timestamp,query_type,urgency_level
+1,101,"How do I book a yoga class for tomorrow?",booking,0.95,2024-01-15 10:00:00,class_booking,medium
+2,102,"What time is the HIIT class today?",class_info,0.90,2024-01-15 11:00:00,class_schedule,high
+3,103,"I want to cancel my membership",cancellation,0.85,2024-01-15 12:00:00,membership_cancellation,high
+4,104,"Can I get a refund for yesterday's class?",payment,0.88,2024-01-15 13:00:00,billing_issue,high
+5,105,"What equipment is available in the gym?",facility,0.92,2024-01-15 14:00:00,equipment_info,low
+6,106,"How much does the premium package cost?",package_info,0.89,2024-01-15 15:00:00,pricing_info,medium
+7,107,"The locker room is dirty and needs cleaning",complaint,0.94,2024-01-15 16:00:00,facility_complaint,medium
+8,108,"Can I freeze my membership for 2 months?",membership_modification,0.87,2024-01-15 17:00:00,membership_change,medium
+9,109,"What's the difference between basic and standard packages?",package_info,0.91,2024-01-16 08:00:00,package_comparison,low
+10,110,"How do I change my personal trainer?",coach_change,0.86,2024-01-16 09:00:00,coach_request,medium
+11,111,"Is the pool open today?",facility,0.93,2024-01-16 10:00:00,facility_hours,medium
+12,112,"I can't log into the mobile app",technical_support,0.96,2024-01-16 11:00:00,app_issue,high
+13,113,"What classes are suitable for beginners?",class_info,0.88,2024-01-16 12:00:00,class_recommendation,low
+14,114,"My payment failed this month",payment,0.94,2024-01-16 13:00:00,payment_issue,high
+15,115,"Can I bring a guest to the gym?",membership_info,0.90,2024-01-16 14:00:00,guest_policy,low
+16,116,"The treadmill is broken and needs repair",complaint,0.97,2024-01-16 15:00:00,equipment_issue,high
+17,117,"How do I upgrade to VIP membership?",membership_modification,0.89,2024-01-16 16:00:00,membership_upgrade,medium
+18,118,"What's included in the personal training sessions?",service_info,0.85,2024-01-16 17:00:00,service_details,low
+19,119,"I want to book a massage appointment",booking,0.91,2024-01-17 08:00:00,service_booking,medium
+20,120,"The music in the spin class is too loud",complaint,0.88,2024-01-17 09:00:00,class_complaint,low
+21,101,"How do I track my workout progress?",general,0.83,2024-01-17 10:00:00,progress_tracking,low
+22,102,"What's the cancellation policy for classes?",policy_info,0.92,2024-01-17 11:00:00,cancellation_policy,medium
+23,103,"Can I get a personal nutrition consultation?",service_info,0.87,2024-01-17 12:00:00,service_inquiry,low
+24,104,"The parking lot is full, where can I park?",facility,0.89,2024-01-17 13:00:00,parking_issue,medium
+25,105,"How do I reset my password?",technical_support,0.95,2024-01-17 14:00:00,account_issue,high
+26,106,"What's the best time to visit the gym?",general,0.81,2024-01-17 15:00:00,timing_advice,low
+27,107,"I want to book a group fitness class",booking,0.93,2024-01-17 16:00:00,group_booking,medium
+28,108,"The water fountain is not working",complaint,0.91,2024-01-17 17:00:00,facility_issue,medium
+29,109,"How do I download the gym app?",technical_support,0.88,2024-01-18 08:00:00,app_download,low
+30,110,"What should I wear to a yoga class?",general,0.84,2024-01-18 09:00:00,attire_advice,low
+31,111,"Can I pause my membership while traveling?",membership_modification,0.86,2024-01-18 10:00:00,membership_pause,medium
+32,112,"The air conditioning is too cold in the gym",complaint,0.87,2024-01-18 11:00:00,climate_complaint,low
+33,113,"How do I book a private training session?",booking,0.94,2024-01-18 12:00:00,private_booking,medium
+34,114,"What's the refund policy for unused classes?",policy_info,0.90,2024-01-18 13:00:00,refund_policy,medium
+35,115,"The app is showing wrong class schedules",technical_support,0.96,2024-01-18 14:00:00,schedule_bug,high
+36,116,"How do I contact the gym manager?",general,0.82,2024-01-18 15:00:00,contact_info,medium
+37,117,"Can I get a trial membership?",membership_info,0.88,2024-01-18 16:00:00,trial_inquiry,medium
+38,118,"The weights are not properly organized",complaint,0.85,2024-01-18 17:00:00,organization_issue,low
+39,119,"How do I update my emergency contact information?",membership_modification,0.89,2024-01-19 08:00:00,profile_update,low
+40,120,"What's the maximum capacity for group classes?",class_info,0.86,2024-01-19 09:00:00,capacity_info,low
+41,101,"I want to book multiple classes this week",booking,0.92,2024-01-19 10:00:00,bulk_booking,medium
+42,102,"The shower water pressure is too low",complaint,0.90,2024-01-19 11:00:00,shower_issue,medium
+43,103,"How do I check my membership expiry date?",membership_info,0.93,2024-01-19 12:00:00,expiry_check,medium
+44,104,"Can I get a replacement key card?",technical_support,0.91,2024-01-19 13:00:00,keycard_issue,high
+45,105,"What's the age requirement for the gym?",policy_info,0.87,2024-01-19 14:00:00,age_policy,low
+46,106,"The music system is not working in the studio",complaint,0.94,2024-01-19 15:00:00,audio_issue,high
+47,107,"How do I book a nutrition consultation?",booking,0.89,2024-01-19 16:00:00,consultation_booking,medium
+48,108,"Can I get a discount for paying annually?",payment,0.85,2024-01-19 17:00:00,discount_inquiry,low
+49,109,"The gym is too crowded during peak hours",complaint,0.88,2024-01-20 08:00:00,crowding_complaint,medium
+50,110,"How do I cancel a class booking?",cancellation,0.94,2024-01-20 09:00:00,class_cancellation,medium
+51,111,"What's the policy on bringing children?",policy_info,0.86,2024-01-20 10:00:00,children_policy,low
+52,112,"The treadmill belt is making strange noises",complaint,0.96,2024-01-20 11:00:00,equipment_noise,high
+53,113,"How do I book a spot in the sauna?",booking,0.87,2024-01-20 12:00:00,amenity_booking,low
+54,114,"Can I get a copy of my membership agreement?",membership_info,0.90,2024-01-20 13:00:00,agreement_copy,medium
+55,115,"The gym floor is slippery and dangerous",complaint,0.98,2024-01-20 14:00:00,safety_issue,high
+56,116,"How do I change my workout schedule?",general,0.83,2024-01-20 15:00:00,schedule_change,low
+57,117,"What's the cost of additional personal training sessions?",package_info,0.88,2024-01-20 16:00:00,additional_cost,medium
+58,118,"The lockers are not working properly",complaint,0.93,2024-01-20 17:00:00,locker_issue,medium
+59,119,"How do I book a group training session?",booking,0.91,2024-01-21 08:00:00,group_training_booking,medium
+60,120,"Can I get a receipt for my monthly payment?",payment,0.89,2024-01-21 09:00:00,receipt_request,low
+61,101,"The gym equipment is outdated and needs updating",complaint,0.87,2024-01-21 10:00:00,equipment_upgrade,low
+62,102,"How do I book a spot in the swimming pool?",booking,0.86,2024-01-21 11:00:00,pool_booking,low
+63,103,"What's the procedure for reporting injuries?",policy_info,0.92,2024-01-21 12:00:00,injury_procedure,medium
+64,104,"The air quality in the gym is poor",complaint,0.91,2024-01-21 13:00:00,air_quality,medium
+65,105,"How do I update my fitness goals in the app?",technical_support,0.84,2024-01-21 14:00:00,goal_update,low
+66,106,"Can I get a day pass for a friend?",membership_info,0.88,2024-01-21 15:00:00,day_pass,low
+67,107,"The spinning bikes need maintenance",complaint,0.95,2024-01-21 16:00:00,equipment_maintenance,high
+68,108,"How do I book a massage therapy session?",booking,0.90,2024-01-21 17:00:00,therapy_booking,medium
+69,109,"What's the policy on using phones during workouts?",policy_info,0.85,2024-01-22 08:00:00,phone_policy,low
+70,110,"The gym towels are not clean",complaint,0.89,2024-01-22 09:00:00,towel_hygiene,medium
+71,111,"How do I cancel my personal training package?",cancellation,0.92,2024-01-22 10:00:00,package_cancellation,medium
+72,112,"Can I get a refund for the unused portion of my membership?",payment,0.87,2024-01-22 11:00:00,membership_refund,high
+73,113,"The gym is too noisy during morning hours",complaint,0.86,2024-01-22 12:00:00,noise_complaint,low
+74,114,"How do I book a spot in the hot tub?",booking,0.88,2024-01-22 13:00:00,hot_tub_booking,low
+75,115,"What's the dress code for the gym?",policy_info,0.90,2024-01-22 14:00:00,dress_code,low
+76,116,"The gym membership prices have increased",complaint,0.82,2024-01-22 15:00:00,price_increase,medium
+77,117,"How do I book a spot in the yoga studio?",booking,0.91,2024-01-22 16:00:00,studio_booking,medium
+78,118,"Can I get a discount for being a student?",payment,0.86,2024-01-22 17:00:00,student_discount,low
+79,119,"The gym parking is expensive",complaint,0.83,2024-01-23 08:00:00,parking_cost,low
+80,120,"How do I book a spot in the meditation room?",booking,0.87,2024-01-23 09:00:00,meditation_booking,low
+81,101,"What's the policy on bringing outside food?",policy_info,0.84,2024-01-23 10:00:00,food_policy,low
+82,102,"The gym equipment is not sanitized properly",complaint,0.96,2024-01-23 11:00:00,sanitization_issue,high
+83,103,"How do I book a spot in the cardio area?",booking,0.85,2024-01-23 12:00:00,cardio_booking,low
+84,104,"Can I get a copy of my workout history?",general,0.88,2024-01-23 13:00:00,history_request,low
+85,105,"The gym music is not suitable for all ages",complaint,0.84,2024-01-23 14:00:00,music_suitability,low
+86,106,"How do I book a spot in the weight room?",booking,0.89,2024-01-23 15:00:00,weight_room_booking,medium
+87,107,"What's the policy on taking photos in the gym?",policy_info,0.87,2024-01-23 16:00:00,photo_policy,low
+88,108,"The gym is not wheelchair accessible",complaint,0.93,2024-01-23 17:00:00,accessibility_issue,high
+89,109,"How do I book a spot in the stretching area?",booking,0.86,2024-01-24 08:00:00,stretching_booking,low
+90,110,"Can I get a pro-rated refund for my membership?",payment,0.91,2024-01-24 09:00:00,pro_rated_refund,high
+91,111,"The gym temperature is too hot",complaint,0.88,2024-01-24 10:00:00,temperature_issue,medium
+92,112,"How do I book a spot in the functional training area?",booking,0.90,2024-01-24 11:00:00,functional_booking,medium
+93,113,"What's the policy on bringing pets to the gym?",policy_info,0.85,2024-01-24 12:00:00,pet_policy,low
+94,114,"The gym is not open on holidays",complaint,0.81,2024-01-24 13:00:00,holiday_hours,low
+95,115,"How do I book a spot in the boxing area?",booking,0.92,2024-01-24 14:00:00,boxing_booking,medium
+96,116,"Can I get a discount for referring friends?",payment,0.87,2024-01-24 15:00:00,referral_discount,low
+97,117,"The gym is too far from my home",complaint,0.79,2024-01-24 16:00:00,location_issue,low
+98,118,"How do I book a spot in the Pilates studio?",booking,0.89,2024-01-24 17:00:00,pilates_booking,medium
+99,119,"What's the policy on bringing guests?",policy_info,0.90,2024-01-25 08:00:00,guest_policy,low
+100,120,"The gym is too expensive for my budget",complaint,0.84,2024-01-25 09:00:00,price_complaint,low

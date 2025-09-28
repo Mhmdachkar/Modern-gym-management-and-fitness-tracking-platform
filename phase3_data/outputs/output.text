@@ -1,0 +1,50 @@
+🎯 ACTIONABLE INSIGHTS & RECOMMENDATIONS
+============================================================
+
+📊 OVERALL SENTIMENT HEALTH:
+  • Average sentiment score: 0.672
+  • Positive feedback rate: 68.0%
+  • Negative feedback rate: 2.0%
+
+🚨 AREAS NEEDING ATTENTION:
+  • service_review: 0.620 average sentiment
+  • package_review: 0.660 average sentiment
+  • Coach 207.0: 0.233 average sentiment
+  • Monday: 0.614 (lowest sentiment day)
+
+💡 RECOMMENDATIONS:
+  • Focus on addressing recurring issues mentioned in negative feedback
+  • Enhance training for underperforming coaches
+  • Consider adjusting class schedules based on sentiment patterns
+  • Implement follow-up system for negative feedback
+
+🎉 SUCCESS HIGHLIGHTS:
+  • Best performing area: coach_review (0.700)
+  • Top performing coach: Coach 206.0 (0.900)
+  • Best day for satisfaction: Sunday (0.750)
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.12/dist-packages (1.6.1)
+Requirement already satisfied: numpy>=1.19.5 in /usr/local/lib/python3.12/dist-packages (from scikit-learn) (2.0.2)
+Requirement already satisfied: scipy>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn) (1.16.1)
+Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn) (1.5.1)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn) (3.6.0)
+
+============================================================
+🤖 SENTIMENT PREDICTION MODEL
+============================================================
+Model Performance:
+  • Mean Absolute Error: 0.0070
+  • R² Score: 0.9948
+
+Top 5 Most Important Features:
+  • rating: 0.9903
+  • day_of_week_Wednesday: 0.0057
+  • hour: 0.0022
+  • day_of_week_Thursday: 0.0012
+  • feedback_type_package_review: 0.0004
+
+✅ Results exported:
+  • feedback_with_sentiment_analysis.csv
+  • sentiment_analysis_summary.csv
+
+🎉 Sentiment Analysis Complete!
+📊 Use the generated insights to improve customer satisfaction!
