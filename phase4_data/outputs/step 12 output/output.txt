@@ -1,0 +1,147 @@
+✅ All libraries imported successfully!
+
+📂 LOADING ALL DATASETS
+============================================================
+✅ All datasets loaded successfully!
+
+📊 DATASET OVERVIEW:
+  Gym Usage: (100, 17)
+  Facility Layout: (22, 11)
+  Coach Performance: (15, 12)
+  Member Geography: (30, 14)
+  Facility Locations: (3, 14)
+  Market Analysis: (30, 10)
+
+🔧 DATA PREPROCESSING
+============================================================
+✅ Data preprocessing complete!
+   Total usage records: 100
+   Date range: 2024-01-15 08:00:00 to 2024-01-25 06:00:00
+   Completed sessions: 0
+   No-shows: 0
+
+🔥 CREATING USAGE HEATMAPS
+============================================================
+
+
+
+
+👨‍🏫 COACH PERFORMANCE ANALYSIS
+============================================================
+📊 COACH SPECIALIZATION STATISTICS:
+                     total_bookings  avg_rating  member_satisfaction
+specialization                                                      
+Aerobics                         95         4.4                 0.88
+Barre                           110         4.8                 0.93
+Boxing                          180         4.9                 0.97
+CrossFit                        140         4.6                 0.91
+Functional Training             160         4.5                 0.90
+HIIT                            150         4.8                 0.95
+Kickboxing                      170         4.8                 0.95
+Personal Training               220         4.6                 0.92
+Pilates                         130         4.9                 0.96
+Spin                            100         4.4                 0.88
+Strength                        200         4.7                 0.94
+Swimming                         80         4.7                 0.94
+TRX                             125         4.7                 0.94
+Yoga                            120         4.6                 0.92
+Zumba                            90         4.3                 0.87
+
+🏆 TOP 5 COACHES BY BOOKINGS:
+       coach_name      specialization  total_bookings  avg_rating  member_satisfaction
+Christopher Moore   Personal Training             220         4.6                 0.92
+        David Kim            Strength             200         4.7                 0.94
+   Alex Rodriguez              Boxing             180         4.9                 0.97
+     Amanda White          Kickboxing             170         4.8                 0.95
+      James Brown Functional Training             160         4.5                 0.90
+
+👥 MEMBER ACTIVITY ANALYTICS
+============================================================
+📈 PEAK HOUR STATISTICS:
+           Avg Member Rating  Total Sessions
+peak_hour                                   
+False                   4.00              40
+True                    4.33              60
+
+📊 MEMBER ENGAGEMENT METRICS:
+  Total Sessions: 100
+  Completed Sessions: 0
+  No-Shows: 0
+  Average Duration (min): 55.50
+  Average Member Rating: 4.20
+  Average Coach Rating: 2.80
+
+🏢 FACILITY UTILIZATION ANALYSIS
+============================================================
+📊 FACILITY USAGE STATISTICS:
+             Total Sessions  Total Minutes  Avg Rating
+facility_id                                           
+1                       100           5550         4.2
+
+🏋️ TOP 10 MOST USED EQUIPMENT:
+              Usage Count  Avg Duration  Avg Rating
+equipment_id                                       
+101                    20          60.0         5.0
+102                    20          60.0         4.0
+103                    20          37.5         3.0
+104                    20          60.0         5.0
+105                    20          60.0         4.0
+
+⏰ TIME-BASED ANALYSIS
+============================================================
+📅 DAY OF WEEK ANALYSIS:
+             usage_id  duration_minutes  no_show
+day_of_week                                     
+Monday             19             55.26        0
+Tuesday            20             55.50        0
+Wednesday          20             55.50        0
+Thursday           11             55.91        0
+Friday             10             55.50        0
+Saturday           10             55.50        0
+Sunday             10             55.50        0
+
+📊 COMPREHENSIVE DASHBOARD SUMMARY
+============================================================
+📈 KEY PERFORMANCE INDICATORS:
+  Total Members Active: 20
+  Total Sessions: 100
+  Total Coaches: 15
+  Total Facilities: 1
+  Avg Session Duration: 55.5 min
+  Completion Rate: 0.0%
+  No-Show Rate: 0.0%
+  Avg Member Rating: 4.20/5
+  Avg Coach Rating: 2.80/5
+  Peak Hour Sessions: 60
+
+🔥 TOP 3 PEAK HOURS:
+  18:00 - 20 sessions
+  20:00 - 20 sessions
+  6:00 - 10 sessions
+
+⭐ TOP 3 ACTIVITIES:
+  class_booking: 40 sessions
+  equipment_usage: 40 sessions
+  personal_training: 20 sessions
+
+👨‍🏫 TOP 3 COACHES BY RATING:
+  Alex Rodriguez: 4.90/5 (180 bookings)
+  Lisa Thompson: 4.90/5 (130 bookings)
+  Sarah Johnson: 4.80/5 (150 bookings)
+
+💾 EXPORTING DASHBOARD DATA
+============================================================
+✅ Dashboard data exported successfully!
+📁 Files created:
+  • dashboard_hourly_usage.csv
+  • dashboard_coach_performance.csv
+  • dashboard_facility_summary.csv
+
+🎯 DASHBOARD INSIGHTS SUMMARY:
+1. Peak usage hours identified for optimal staffing
+2. Coach performance metrics tracked for quality assurance
+3. Equipment utilization analyzed for maintenance scheduling
+4. Member engagement patterns identified for marketing
+5. Facility capacity optimization opportunities discovered
+
+✅ STEP 12 COMPLETE - GYM USAGE DASHBOARD WITH HEATMAPS
