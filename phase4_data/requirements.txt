@@ -23,11 +23,8 @@ geopandas>=0.13.0
 geopy>=2.3.0
 contextily>=1.4.0
 
-# Interactive Maps
+# Interactive Maps (optional)
 mapbox>=0.1.0
-
-# Time Series Analysis
-datetime
 
 # Statistical Analysis
 scipy>=1.10.0
@@ -43,4 +40,3 @@ gunicorn>=21.2.0
 
 # Additional Utilities
 tqdm>=4.65.0
-warnings

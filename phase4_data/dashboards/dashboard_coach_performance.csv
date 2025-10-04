@@ -1,0 +1,16 @@
+coach_id,coach_name,specialization,total_bookings,confirmed_bookings,no_shows,cancellation_rate,avg_rating,total_hours,peak_booking_hours,member_satisfaction,class_popularity
+201,Sarah Johnson,HIIT,150,140,5,0.067,4.8,300,18:00-20:00,0.95,high
+202,Mike Chen,Yoga,120,115,8,0.067,4.6,240,09:00-11:00,0.92,medium
+203,Alex Rodriguez,Boxing,180,165,10,0.056,4.9,360,19:00-21:00,0.97,high
+204,Emma Wilson,Spin,100,95,12,0.12,4.4,200,12:00-14:00,0.88,medium
+205,David Kim,Strength,200,185,15,0.075,4.7,400,18:00-20:00,0.94,high
+206,Lisa Thompson,Pilates,130,125,6,0.046,4.9,260,10:00-12:00,0.96,high
+207,James Brown,Functional Training,160,150,8,0.05,4.5,320,19:00-21:00,0.9,medium
+208,Maria Garcia,Zumba,90,85,10,0.111,4.3,180,20:00-22:00,0.87,medium
+209,Robert Taylor,CrossFit,140,130,12,0.086,4.6,280,18:00-20:00,0.91,high
+210,Jennifer Lee,Barre,110,105,7,0.064,4.8,220,11:00-13:00,0.93,medium
+211,Michael Davis,Swimming,80,75,8,0.1,4.7,160,07:00-09:00,0.94,medium
+212,Amanda White,Kickboxing,170,160,9,0.053,4.8,340,20:00-22:00,0.95,high
+213,Christopher Moore,Personal Training,220,205,18,0.082,4.6,440,18:00-20:00,0.92,high
+214,Jessica Anderson,Aerobics,95,90,8,0.084,4.4,190,19:00-21:00,0.88,medium
+215,Daniel Wilson,TRX,125,120,6,0.048,4.7,250,19:00-21:00,0.94,medium

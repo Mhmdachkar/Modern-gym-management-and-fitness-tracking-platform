@@ -29,3 +29,33 @@ zip_code,city,state,population,median_income,age_18_35_pct,fitness_interest_scor
 10028,New York,NY,28000,120000,0.18,0.62,1.8,low,low
 10029,New York,NY,6000,52000,0.29,0.78,0.9,low,low
 10030,New York,NY,29000,125000,0.17,0.60,1.9,low,low
+11201,Brooklyn,NY,32000,68000,0.48,0.89,0.7,high,high
+11202,Brooklyn,NY,28000,62000,0.52,0.91,0.5,high,high
+11203,Brooklyn,NY,24000,58000,0.55,0.93,0.3,high,high
+11204,Brooklyn,NY,26000,65000,0.45,0.86,0.8,medium,medium
+11205,Brooklyn,NY,30000,72000,0.42,0.84,0.9,medium,low
+11206,Brooklyn,NY,22000,55000,0.58,0.94,0.2,high,high
+11207,Brooklyn,NY,20000,52000,0.60,0.95,0.1,high,high
+11208,Brooklyn,NY,18000,48000,0.62,0.96,0.0,high,high
+11209,Brooklyn,NY,35000,78000,0.38,0.82,1.0,medium,low
+11210,Brooklyn,NY,38000,82000,0.35,0.79,1.2,low,low
+11101,Queens,NY,41000,75000,0.41,0.87,0.6,high,high
+11102,Queens,NY,37000,68000,0.44,0.89,0.4,high,high
+11103,Queens,NY,33000,62000,0.47,0.91,0.3,high,high
+11104,Queens,NY,29000,58000,0.50,0.93,0.2,high,high
+11105,Queens,NY,25000,55000,0.53,0.94,0.1,high,high
+11106,Queens,NY,27000,60000,0.46,0.88,0.5,high,medium
+11107,Queens,NY,31000,65000,0.43,0.85,0.7,medium,medium
+11108,Queens,NY,35000,70000,0.40,0.82,0.8,medium,low
+11109,Queens,NY,39000,75000,0.37,0.79,1.0,medium,low
+11110,Queens,NY,43000,80000,0.34,0.76,1.1,low,low
+10451,Bronx,NY,45000,45000,0.65,0.97,0.0,high,high
+10452,Bronx,NY,42000,42000,0.67,0.98,0.0,high,high
+10453,Bronx,NY,40000,40000,0.69,0.99,0.0,high,high
+10454,Bronx,NY,38000,38000,0.71,1.00,0.0,high,high
+10455,Bronx,NY,36000,36000,0.73,1.00,0.0,high,high
+10456,Bronx,NY,34000,34000,0.75,1.00,0.0,high,high
+10457,Bronx,NY,32000,32000,0.77,1.00,0.0,high,high
+10458,Bronx,NY,30000,30000,0.79,1.00,0.0,high,high
+10459,Bronx,NY,28000,28000,0.81,1.00,0.0,high,high
+10460,Bronx,NY,26000,26000,0.83,1.00,0.0,high,high

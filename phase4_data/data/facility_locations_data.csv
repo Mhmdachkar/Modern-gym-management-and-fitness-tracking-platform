@@ -2,3 +2,5 @@ facility_id,facility_name,address,city,state,zip_code,latitude,longitude,opening
 1,gym_main,123 Fitness St,New York,NY,10001,40.7505,-73.9934,2020-01-15,500,450,0.90,3,0.35
 2,gym_branch_a,456 Health Ave,New York,NY,10002,40.7155,-73.9843,2021-06-01,300,280,0.93,2,0.28
 3,gym_branch_b,789 Wellness Blvd,New York,NY,10003,40.7328,-73.9922,2022-03-10,200,180,0.90,1,0.22
+4,gym_express,321 Quick Fit Lane,Brooklyn,NY,11201,40.6895,-73.9897,2023-01-20,150,120,0.80,4,0.18
+5,gym_premium,654 Elite Fitness Drive,Queens,NY,11101,40.7489,-73.9378,2023-08-15,400,350,0.88,2,0.25
